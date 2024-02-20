@@ -1,0 +1,15 @@
+@mixin position-set-before {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+    }
+}
+
+@mixin position-set-after {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+    }
+}
